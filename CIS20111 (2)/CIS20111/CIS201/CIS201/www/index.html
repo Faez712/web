@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymStore</title>
+    <link rel="Website icon" type="image/png" href="../src/GymL.jpg">
+    <link rel="stylesheet" href="../src/styles.css">
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("navbar-container").innerHTML = data);
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+</head>     
+<body>
+    <header>
+        <div id="navbar-container"></div>
+    </header>
+
+    <main class="main">
+        
+
+        <main class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="product-container">
+                        <button class="btn btn-primary product-btn">add to cart</button>
+                        <img src="../src/ProteinP.jpg" alt="Monitor" width="250" height="250">
+                        <h2>Protien Powder</h2>
+                        <p>Weight management 
+                            <br>
+                            Muscle growth and repair
+                            <br>
+                            Added nutrition
+                            <br><br> 
+                            Price:50$</p>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-container">
+                        <button class="btn btn-primary product-btn">add to cart</button>
+                        <img src="..\src\Creatine.jpg" alt="Creatine" width="250" height="250">
+                        <h2>Creatine</h2>
+                        <p>
+                            Helps muscle cells produce more energy
+                            Improves high-intensity exercise performance
+                            Speeds muscle growth
+                            <br><br> 
+                            Price:$85</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-container">
+                        <button class="btn btn-primary product-btn">add to cart</button>
+                        <img src="..\src\FatB.jpg" alt="CPU" width="250" height="250">
+                    <h2>Fat Burner</h2>
+                    <p>
+                       <br>
+                       Fastens Fat burning and contain vitamins and menirals.
+                        <br><br>
+                        Price: $20
+                    </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="product-container">
+                        <button class="btn btn-primary product-btn">add to cart</button>
+                        <img src="..\src\TestB.jpg"  alt="GPU" width="250" height="250">
+                    <h2>Test Booster</h2>
+                    
+                        
+                      <p>Boosts testosterone Increases muscle size Increases<br> metabolism <br> <br> Price: $80</p>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="product-container">
+                        <button class="btn btn-primary product-btn">add to cart</button>
+                        <img src="..\src\PreWorkout.jpg" alt="case" width="250" height="250">
+                    <h2>PreWorkout</h2>
+                    <p>Gives power and energy before workout
+                        <br><br> <br>
+                        Price: $35</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </main>
+
+    <footer class="footer">
+        <p>Created by: Yasser Braik, Mousa Elias, Abdullah Hejazi, Faiz</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const productContainers = document.querySelectorAll(".product-container");
+
+            productContainers.forEach(container => {
+                container.addEventListener("mouseenter", function() {
+                    container.style.transform = "scale(1.05)"; // Slightly increase the size
+                    container.style.borderColor = "black"; // Change border color to Tomato
+                });
+
+                container.addEventListener("mouseleave", function() {
+                    container.style.transform = "scale(1)"; // Revert to original size
+                    container.style.borderColor = "#d7d2d2"; // Revert to original border color
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
